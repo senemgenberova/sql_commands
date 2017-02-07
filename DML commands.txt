@@ -1,0 +1,17 @@
+DML - Data Manipulate Language-in emrleri databasede saxlanilan datalari idare etmek ucunur. DML-in 3 commandi var.
+1 - INSERT INTO [table_name] values(...);
+meselen: students adli bir table-imiza yeni bir data elave etmek istediyimizde INSERT commandindan istifade edirik.
+INSERT INTO students(id, name, surname,class) VALUES(1,'Senem', 'Qenberova','2');
+Bu zaman students tableina id = 1 olan yeni bir data elave olunacaq.
+
+2 - UPDATE [table_name] SET field_name = value WHERE (condition is hold);
+meselen: students tableda id-si 1 olanin adini Aysen olaraq deyismek isteyiremse,
+UPDATE students SET name = 'Aysen' WHERE id = 1;
+Bu zaman students table-da id = 1 olanin adi Aysen olaraq deyisilecek.
+
+3 - (a)DELETE FROM [table_name] WHERE (condition is hold);
+    (b)DELETE FROM [table_name];
+meselen: (a) - students tableda girilen fielde istinaden her-hansi bir datani silmek ucun istifade olunur.
+DELETE FROM students WHERE id = 1;
+Bu zaman students table-inda id = 1 olan data silinecek(butun row silinecek).
+(b) - ise tabledaki butun datalari silmek ucun istifade olunur.
